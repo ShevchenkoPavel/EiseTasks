@@ -11,32 +11,19 @@ import ocular from './images/ocular.png';
 
 import './App.css';
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
-        </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
-    );
-  }
-}
 
-class Now extends Component {
+class App extends Component {
 	render() {
 		return (
-			<div className = "Now">
+			<div>
 				<div className = "left">
             <aside className = "sidebar">
+			
                 <div id = "sidebar__user">
                     <img src={avatar}></img>
-                    <p className = "username">имя фамилия</p>
-                </div>
+                    <p className = "username"> {this.props.name} </p>
+                </div> 
+			
                 <div className = "sidebar__lists">
                     <img src={burgersidebar}></img>
                     <p>списки</p>
@@ -45,28 +32,22 @@ class Now extends Component {
                 <div className = "sidebar__criterions">
                     <a href = "index.html">#важно
 					
-						<div className = "circle">
-							<span>
-								4
-							</span>
+						<div className = "circle circle_right">
+							{this.props.importantNumber}
 						</div>					
 			
 					</a>
                     <a href = "index.html">#срочно
 			
-					<div className = "circle">
-						<span>
-							1
-						</span>
+					<div className = "circle circle_right">
+						{this.props.urgentNumber}
 					</div>
 			
 					</a>
                     <a href = "index.html">#понятно
 			
-					<div className = "circle">
-						<span>
-							6
-						</span>
+					<div className = "circle circle_right">
+						{this.props.understoodNumber}
 					</div>
 			
 					</a>
@@ -90,37 +71,31 @@ class Now extends Component {
                             <a href = "index.html">
 								сегодня 
 								<div className = "circle nofloat">
-									<span>
 									9
-									</span>
 								</div>
 							</a>
                             <p className = "menu">|</p>
                             <a href = "index.html">
 								потом
-									<div className = "circle nofloat">
-									<span>
+									<div className = "circle">
 									20
-									</span>
 								</div>
 							</a>
                             <p className = "menu">|</p>
                             <a href = "index.html">
 								выполненные
 								<div className = "circle nofloat">
-									<span>
 									30
-									</span>
 								</div>
 							</a>
                         </nav>
                         <form>
-                            <p><input id = "srch" type="search" name="search" placeholder="найти"/>
-                            <button id = "add">Добавить</button>
+                            <p><input id = "inputTask" type="text" name="taskName" placeholder="Task"/>
+							<input id = "add" type="submit" value="Добавить"/>
 							</p>
                         </form>
                 </header>
-                <h1 id = "h1">на сегодня :</h1>
+                <h1 id = "h1">{this.props.which} :</h1>
                 <h2 id = "important">#важно</h2>
                 <div className = "task">
                     <div className = "objstatus">
@@ -128,7 +103,7 @@ class Now extends Component {
 						<p className = "subj">зайти за заданием</p>
 						<div className = "ops">
 							<img className = "ops__item" src={edit}></img>
-							<img className = "ops__item" src={del}></img>
+							<img className = "ops__item" src={del}></img> 
 						</div>
 					</div>
                 </div>
@@ -141,4 +116,21 @@ class Now extends Component {
 	}
 }
 
-export default Now;
+
+App.propTypes = {
+	name: React.PropTypes.string,
+	importantNumber: React.PropTypes.number,
+	urgentNumber: React.PropTypes.number,
+	understoodNumber: React.PropTypes.number,
+	which: React.PropTypes.string
+};
+
+App.defaultProps = {
+	name: 'имя фамилия',
+	which: 'на сегодня',
+	importantNumber: 4,
+	urgentNumber: 1,
+	understoodNumber: 6
+}
+
+export default App;

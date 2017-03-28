@@ -1,0 +1,8 @@
+#sidebar__user {
+    font-size: 120%;
+}
+
+.username {
+	display: inline-block;
+ 	text-transform: capitalize;
+}

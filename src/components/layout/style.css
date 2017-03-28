@@ -54,15 +54,6 @@ body {
     padding: 30px 50px;
 }
 
-#sidebar__user {
-    font-size: 120%;
-}
-
-.username {
-	display: inline-block;
- 	text-transform: capitalize;
-}
-
 .sidebar__lists {
     margin: 30px 0;
 }
@@ -125,76 +116,6 @@ body {
     text-decoration: none;
     margin: 0 20px;
 }
-
-#inputTask {
-    border: none;
-    width: 65%;
-    height: 30px;
-    font-size: 125%;
-    opacity: 0.5;
-}
-
-#add {
-    font-size: 105%;
-    border: none;
-    color: grey;
-    background: #C7C7C7;
-    padding: 5px 10px;
-	margin-left: 5px;
-}
-
-#add:active {
-    border: none;
-    opacity: 0.8;
-}
-
-#h1 {
-    text-transform: uppercase;
-    font-size: 130%;
-	font-weight: normal;
-    color: grey;
-}
-
-#important {
-	font-weight: normal;
-    color: grey;
-	font-size: 110%;
-}
-
-.objstatus {
-	width: 75%;
-	display: inline-block;
-	border-bottom: 1px solid black;
-	border-top: 1px solid black;
-}
-
-.subj {
-	display: inline-block;
-}
-
-.ops {
-	display: inline-block;
-	float: right;
-	padding-top: 2%;
-}
-
-.ops__item {
-	margin-left: 20px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .simplelink {
     display: inline-block;
