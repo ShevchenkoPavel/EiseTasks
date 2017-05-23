@@ -1,0 +1,30 @@
+.mg {
+	margin-left: 29%;
+	width: 60%;
+	display: inline-block;
+}
+
+#inputTask {
+    border: none;
+	margin-top: 40px;
+    width: 65%;
+    height: 30px;
+    font-size: 125%;
+    opacity: 0.5;
+	padding: 0 10px;
+	background-color: gainsboro;
+}
+
+#add {
+    font-size: 105%;
+    border: none;
+    color: grey;
+    background: #C7C7C7;
+    padding: 5px 10px;
+	margin-left: 5px;
+}
+
+#add:active {
+    border: none;
+    opacity: 0.8;
+}

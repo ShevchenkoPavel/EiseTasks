@@ -1,0 +1,81 @@
+html {
+}
+
+body {
+    margin: 0; /* убираем отступы в браузере */
+    padding: 0;
+	font-family: 'Hind', sans-serif;
+}
+
+.left {
+    width: 25%;
+	height: 100%;
+    float: left;
+    background: #262726;
+    color: white;
+	position: fixed;
+}
+
+.sidebar__lists {
+    margin: 30px 0;
+}
+
+.sidebar__lists>p {
+    margin-left: 5px;
+	margin-right: 58%;
+    display: inline;
+	text-transform: capitalize;
+}
+
+
+.sidebar__criterions {
+    margin-bottom: 30px;
+}
+
+.sidebar__criterions>a {
+    display: block;
+    color: white;
+    text-decoration: none;
+	text-transform: capitalize;
+}
+
+.sidebar__other {
+    margin-bottom: 30px;
+}
+
+.sidebar__other>a {
+    display: block;
+    color: white;
+	font-size: 180%;
+	color: gray;
+    text-decoration: none;
+	text-transform: capitalize;
+}
+
+.header {
+    margin-bottom: 30px;
+}
+
+.menu {
+}
+
+#burgerheader {
+    margin-right: 20px;
+}
+
+.menu>a {
+    display: inline;
+    color: grey;
+    text-decoration: none;
+}
+
+.menu>p {
+    display: inline;
+    color: grey;
+    text-decoration: none;
+    margin: 0 20px;
+}
+
+.taskList {
+	margin-left: 25%;
+}

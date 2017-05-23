@@ -1,0 +1,27 @@
+{
+  "success": true,
+  "errors": null,
+  "TodoTasks": [
+	  			{"name": "firstTodoTask", "important": true, "urgent": false, "understood": false},
+				{"name": "Todotask2", "important": false, "urgent": true, "understood": false},
+				{"name": "Todotask3", "important": false, "urgent": false, "understood": true},
+				{"name": "task4", "important": true, "urgent": false, "understood": false},
+				{"name": "task5", "important": false, "urgent": false, "understood": true},
+	  			{"name": "task6", "important": false, "urgent": false, "understood": true},
+	  			{"name": "task7", "important": false, "urgent": false, "understood": true}
+  			   ],
+	
+  "LaterTasks": [
+	  			 {"name": "Procrastination", "important": true, "urgent": false, "understood": false},
+	  			 {"name": "Standup", "important": false, "urgent": true, "understood": false},
+	  			 {"name": "Find work", "important": false, "urgent": false, "understood": true},
+	  			 {"name": "Study", "important": false, "urgent": true, "understood": true}
+  				],
+	
+  "DoneTasks": [
+	  			{"name": "DoneTask", "important": false, "urgent": false, "understood": true},
+				{"name": "DoMock", "important": false, "urgent": true, "understood": false},
+				{"name": "FirstFourStories", "important": true, "urgent": false, "understood": false},
+				{"name": "Someoneelse", "important": true, "urgent": true, "understood": false}
+			   ]
+}

@@ -1,0 +1,11 @@
+.right {
+    width: 70%;
+    margin-left: 26%;
+	font-weight: normal;
+    color: grey;
+	position: absolute;
+}
+
+.content {
+    padding: 0 50px;
+}

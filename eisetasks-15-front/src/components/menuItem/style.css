@@ -1,0 +1,14 @@
+.circle {
+	display: inline-block;
+    width: 24px;
+    height: 24px;
+    background: cornflowerblue;
+    border-radius: 50px;
+	margin: 0 5px;
+	text-align: center;
+	color: white;
+}
+
+.circle_right {
+	float: right;
+}

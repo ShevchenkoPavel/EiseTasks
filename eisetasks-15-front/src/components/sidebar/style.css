@@ -1,0 +1,12 @@
+.left {
+    width: 25%;
+	height: 100%;
+    float: left;
+    background: #262726;
+    color: white;
+	position: fixed;
+}
+
+.sidebar {
+    padding: 30px 50px;
+}
